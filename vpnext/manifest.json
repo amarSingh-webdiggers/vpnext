@@ -1,0 +1,51 @@
+{
+
+  "manifest_version": 2,
+  "name": "vpnext",
+  "version": "1.0",
+
+  "description": "VPN Extention",
+
+  "icons": {
+    "48": "icons/icon.webp",
+    "96": "icons/icon.webp"
+  },
+  "browser_action": {
+    "browser_style": false,
+    "default_icon": "icons/icon.webp",
+    "default_popup": "popup/popup.html",
+    "default_title": "VPNEXT"
+  },
+  "permissions": [
+    "<all_urls>",
+      "browserSettings",
+      "captivePortal",
+      "identity",
+      "idle",
+      "privacy",
+      "proxy",
+      "storage",
+      "webRequest",
+      "webRequestBlocking",
+      "cookies",
+      "notifications"
+  ],
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ]
+  },
+  "browser_specific_settings": {
+  "gecko": {
+    "id": "vpnext@webdiggers.in"
+  }
+},
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scriptvpn.js"]
+    }
+  ]
+
+}

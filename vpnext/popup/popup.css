@@ -1,0 +1,172 @@
+*
+{
+margin: 0px auto;
+padding: 0px;
+}
+body
+{
+padding: 10px;
+font-family:Arial;
+background: #efefef;
+color: #000;
+height: auto;
+max-width: 280px;
+}
+.loader
+{
+position: relative;
+top: 105px;
+text-align: center;
+width: 100%;
+display: none;
+}
+.proxylist
+{
+	width: 260px;
+float: left;
+margin-top: 20px;
+background: #246a9e;
+padding: 10px;
+border-radius: 5px;
+}
+
+.proxylist ul
+{
+list-style: none;
+float: left;
+width: 100%;
+margin-left: 0px;
+position: relative;
+left: 0px; 
+}
+.proxylist ul li
+{
+margin: 10px 0px;
+width: 100%;
+border-bottom: solid 1px #fff;
+text-decoration: none;
+cursor: pointer;
+position: relative;
+left: 0px; 
+color: #fff !important;
+}
+
+.button 
+{
+width:210px;
+float: left; 
+text-align: center; 
+border: solid 1px #000; 
+background: #2e2e2e; 
+color: #fff; 
+border-radius: 5px; 
+margin: 10px; 
+padding: 10px; 
+cursor: pointer;
+}
+
+#removeproxybtn
+{
+	background: #f32013;
+	border-color: #f32013;
+}
+
+.reloadservers
+{
+	float: right;
+	font-size: 12px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 0px;
+	margin: 0px;
+	cursor: pointer;
+}
+
+
+.connectedshieldimg
+{
+	width: 70px;
+	height: 70px;
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+}
+
+
+.connectedshield
+{
+	border-radius: 50%;
+	//overflow: hidden;
+	width: 70px;
+	height: 70px;
+	position: relative;
+	z-index: 3;
+	margin: 20px auto;
+
+}
+
+.connectedshield:before
+{
+	width:70px;
+	height: 70px;
+	content:'';
+	display: block;
+	position: absolute;
+	z-index: 1;
+	background: #28a745;
+	opacity: 0.5;
+	-webkit-animation: pulse infinite linear 2s;
+	-webkit-animation-delay: 0.5;
+	-webkit-transition: 0.5s;
+	-webkit-animation-delay: 1s;
+	transition: 0.5s;
+	top:0;
+	left: 0;
+	border-radius: 50%;
+}
+.connectedshield:after
+{
+	width:70px;
+	height: 70px;
+	content:'';
+	display: block;
+	position: absolute;
+	z-index: 2;
+	background: #28a745;
+	opacity: 0.5;
+	-webkit-animation: pulse infinite linear 2s;
+	-webkit-transition: 0.5s;
+	top:0;
+	left: 0;
+	border-radius: 50%;
+}
+
+@keyframes pulse
+{
+	0%
+	{
+		-webkit-transform: scale(1);
+	}
+	100%
+	{
+		-webkit-transform: scale(1.5);
+		opacity: 0;
+	}
+}
+
+
+.connectedtext
+{
+	text-align: center;
+	color: #4BB543;
+	font-weight: bold;
+}
+
+.connectedtext span
+{
+	text-align: center;
+	color: #000;
+}
